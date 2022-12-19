@@ -15,4 +15,7 @@ int main()
     cout << a[1] << endl; // print the array value 
     printf("%d \n", a[3]); //print the array value of c language in c++
 
+   int b[6] = {1,8,5,7,4,6}; // another way of initializing
+   cout << sizeof(b) << endl; 
+   cout << b[4] << endl; 
 }
