@@ -1,0 +1,18 @@
+
+#include <iostream>
+//#include <stdio.h> if any error occurs while printing printf we use c program header file
+using namespace std;
+
+int main()
+{
+    int a[4];
+    a[0] = 6; // initializing within the code
+    a[1] = 4;
+    a[2] = 9;
+    a[3] = 1;
+
+    cout << sizeof(a) << endl; //find the size of the datatype
+    cout << a[1] << endl; // print the array value 
+    printf("%d \n", a[3]); //print the array value of c language in c++
+
+}
