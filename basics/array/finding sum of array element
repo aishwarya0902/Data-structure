@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a[5] = { 5,10,15,20,25 },i;
+    int sum = 0;
+    int value = sizeof(a) / sizeof(a[2]);
+    for (i = 0; i < value; i++) {
+        sum += a[i];
+    }
+    cout << sum << endl;
+
+
+
+}
