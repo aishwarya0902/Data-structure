@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int a[10] = { 5,10,15,20,25,30 };
+
+    for (int i = 0; i < 10; i++) {
+        cout << a[i] << endl; // using for loop
+    }
+    cout << "-----------------------------------------------------" << endl;
+    for (int t : a) {
+        cout << t << endl; //another way of for loop
+    }
+
+}
