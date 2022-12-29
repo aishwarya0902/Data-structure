@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+struct rectangle    // this is known as definition
+{
+    int length;
+    int breadth;
+
+};
+
+int main()
+{
+    struct rectangle r1 = {10,6};
+    
+    r1.length = 20;
+    r1.breadth = 12;
+    
+    cout << r1.length << endl;
+    cout << r1.breadth <<endl;
+    
+    cout << r1.length*r1.breadth << endl;
+   
+
+    return 0;
+}
