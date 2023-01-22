@@ -1,0 +1,15 @@
+#include <iostream>
+#include <stdio.h>
+
+using namespace std;
+
+int main()
+{
+    int  a = 5; // data variable
+    int *p; //address variable (declaration)
+    p = &a; // inilization
+    
+    cout<< a<< endl;
+    printf("using Pointer %d",*p); // dereferncing
+    return 0;
+}
