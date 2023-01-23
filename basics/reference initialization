@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a = 10;
+    int &r = a; // in reference we need to declare with & and need to initialize 
+                // reference is nick name to data variable
+    cout << a <<endl <<r<<endl;
+    cout<<"-----------------------"<<endl;
+    a = 25; // if change a value it will also change r value because r doesnt create a new space at stack it take a 
+            //  it is reference of a 
+    cout << a <<endl <<r<<endl;
+    cout<<"-----------------------"<<endl;
+    r = 12 ; 
+    cout << a <<endl <<r<<endl;
+
+    return 0;
+}
