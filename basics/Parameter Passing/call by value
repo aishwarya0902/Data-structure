@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+// call by value
+int increment(int a)
+{
+    a++;
+    cout<<a<<endl;
+    return 0;
+}
+
+int main()
+{
+    int x = 15, value;
+    value = increment(x);
+    cout<<x<<endl;
+
+    return 0;
+}
