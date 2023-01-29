@@ -1,0 +1,20 @@
+#include <iostream>
+
+using namespace std;
+
+void func(int *A){ //array are call by address only not by value
+    cout<<sizeof(A)/sizeof(int)<<endl; //this will print only the function value
+}
+
+int main()
+{
+    int A[] = {1,2,3,4,5,6};// these array element are not accesable by function array
+    int n = 5;
+    func(A);
+    cout<<"********************"<<endl;
+    cout<<sizeof(A)/sizeof(int)<<endl;
+    cout<<"********************"<<endl;
+    for(int x:A)
+    cout<<x<<endl;
+    return 0;
+}
