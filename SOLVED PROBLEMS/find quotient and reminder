@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int diviend,divisor,qua,rem;
+    cout<<"Enter the diviend"<<endl;
+    cin>>diviend;
+    cout<<endl<<"Enter the divisor"<<endl;
+    cin>>divisor;
+    qua = diviend/divisor;
+    rem = diviend%divisor;
+    cout<<"THE QUOTIENT "<<qua<<endl;
+    cout<<"THE REMINDER "<<rem <<endl;
+
+    return 0;
+}
