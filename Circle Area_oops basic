@@ -1,0 +1,42 @@
+//  TO FIND THE AREA OF A CIRCLE IN OOPS
+
+#include <iostream>
+
+using namespace std;
+
+class Circle{
+    private:
+    int radius;
+    
+    public:
+    Circle(int r){    //this is constructor
+        radius = r;
+    }
+    void Setradius(int radius){  
+        this -> radius = radius;  //this is setter
+    }
+    
+    int getRadius(){
+        return radius;     // this getter
+    }
+};
+
+class Result{
+    public:
+    double calculateResult(Circle c){
+        int r = c.getRadius();     // calculation part
+        return 3.14*r*r;
+    }
+};
+int main()
+{
+    int radius;
+    cout<<"Enter the radius: "<< endl;
+    cin>> radius;
+    
+    Circle c1(radius);     // declaration part
+    Result c2;
+    cout<< "AREA OF A CIRCLE: " << c2.calculateResult(c1) << "cm2" <<endl;
+
+    return 0;
+}
