@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+    vector<int> numbers;
+    numbers.push_back(0);
+
+    for(int i = 11;i<=30;i++){
+        numbers.push_back(i);
+    }
+
+    // for(int number :numbers){       --> size(), max_size(),capacity(),resize(),empty(),front(),back()
+    //     cout<< number<<endl;
+    // }
+    
+    for (auto a = numbers.begin(); a!= numbers.end(); a++){
+        cout<<*a<<endl;
+        // cout<<&a<<endl;
+        // cout<<&(*a)<<endl;
+    }
+    cout <<"size:"<<numbers.size()<<endl;
+
+    return 0;
+}
